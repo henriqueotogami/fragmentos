@@ -1,1 +1,47 @@
+# Ambiente virtual
+venv/
+
+# Arquivos Python compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# Configurações do sistema
+.DS_Store
+
+# Arquivos do editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dependências do pip
+pip-wheel-metadata/
+
+# Arquivos de cache
+.cache/
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# Arquivos de testes
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.pytest_cache/
+
+# Banco de dados local (se usar futuramente)
+*.sqlite3
+instance/
+
+# Arquivos de ambiente (se usar)
+.env
+.env.*
+
 .DS_Store
