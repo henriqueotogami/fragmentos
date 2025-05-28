@@ -1,0 +1,12 @@
+# Utilização de Virtual Enviroment
+- Enviar o comando $ python3 -m venv venv
+
+# Ativação da Venv
+- Enviar o comando $ source venv/bin/activate
+
+# Instalação do Flask
+- Enviar o comando pip3 install flask
+
+# Salvar em arquivo as dependencias
+- Enviar o comando $ pip freeze > requirements.txt
+
