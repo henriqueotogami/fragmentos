@@ -48,10 +48,15 @@ footer {
 
 .left-sidebar {
     outline: 1px solid purple;
-    /* height: 100vh;
-    width: 100vw; */
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
+    height: 50vh;
+    width: 10vw;
+    writing-mode: vertical-rl;      /* escrita na vertical */
+    transform: rotate(180deg);      /* escrita de baixo para cima */
+    padding: 20px;                  /* adicionando espaço interno na div */
+    font-size: 1.2rem;              /* fonte com tamanho relativo á fonte raiz do documento */
+    display: flex;                  /* ativa o flexbox no elemento */
+    align-items: center;            /* centraliza o elemento verticalmente */
+    justify-content: flex-start;    /* centraliza o elemento horizontalmente */
 }
 
 .space-poetry {
