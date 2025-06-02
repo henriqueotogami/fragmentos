@@ -36,18 +36,25 @@ footer {
     outline: 1px solid green;
     text-align: center;
     max-width: 100vw;
-    max-height: 100vh;
+    max-height: 10vh;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
 }
 
 .container {
-    outline: 1px solid yellow;
+    /* outline: 1px solid yellow; */
     /* height: 100vh;
     width: 100vw; */
     display: flex;
 }
 
 .left-sidebar {
-    outline: 1px solid purple;
+        /* background-color: blue; */
+    /* outline: 1px solid purple; */
     height: 50vh;
     width: 10vw;
     writing-mode: vertical-rl;      /* escrita na vertical */
@@ -59,8 +66,33 @@ footer {
     justify-content: flex-start;    /* centraliza o elemento horizontalmente */
 }
 
-.space-poetry {
-    outline: 1px solid pink;
-    /* height: 100vh;
-    width: 100vw; */
+.add-poetry{
+    position: absolute;                         /* posicionando o elemento de forma absoluta em relação ao pai */
+    top: 20px;                                  /* empurra o elemento para baixo a partir do topo */
+    right: 20px;                                /* empurra o elemento para a esquerda a partir da direita */
+    background-color: white;                  /* define a cor do fundo */
+    border-radius: 50%;                         /* define um quadrado perfeito virar um círculo */
+    width: 40px;                                /* define a largura */
+    height: 40px;                               /* define a altura */
+    display: flex;                              /* define o botão como um container flexível */
+    align-items: center;                        /* centraliza o conteúdo verticalmente */
+    justify-content: center;                    /* centraliza o conteúdo horizontalmente */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);   /* aplica uma borda suave para dar profundidade */
+    cursor: pointer;                            /* define um elemento clicável */
+    font-size: 1.5rem;                          /* Define o tamanho da fonta */
+}
+
+.grid-cards-poetry{
+    display: grid;                                                  /* define o elemento como uma grade */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    /* repete um padrão de colunas, encaixa o maior número de colunas, com mínimo de 250px e máximo de 1fr*/
+    gap: 20px;                                                      /* define um espaçamanento de 20px entre as colunas e linhas do grid */
+    height: 50vh;                                                   /* altura do grid */
+    width: 80vw;                                                    /* largura do grid */
+}
+
+.card-poetry{
+    outline: 1px solid black;
+    border-radius: 16px;                        /* define as bordas arredondadas de 16px */
+    padding: 20px;                              /* define o espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* define uma sombra */
 }
